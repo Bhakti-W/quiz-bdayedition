@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz game</title>
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+    <div class="container">
+        <div class="screen active" id="start_screen">
+          <h1>Quiz Time!</h1>
+          <p>Lets see how much you remember</p>   
+           <button id="start_btn">Start Quiz</button>
+        </div>
+
+    <div class="screen" id="quiz_screen">
+    <div class="quiz_header">
+        <h2 id="ques_text">Ques goes here</h2>
+        <div class="quiz-info">
+            <p>Question<span id="current-ques">1</span> of <span id="total-ques">10</span></p>
+        <p>
+            Score: <span id="score">0</span>
+        </p>
+        </div>
+       </div>
+    <div id="ans-container" class="ans-container">
+     <!--Answer buttond will be inserted here from our js code later at some point-->
+    </div>
+    <div class="progess-bar"> 
+        <div id="progress" class="progress"></div>
+    </div>
+    </div>
+    <div id="result-scrn" class="screen">
+        <h1>Quiz Results</h1>
+        <div class="result-info">
+            <p>You scored <span id="final-score">0</span> out of <span id="max-score">10</span></p>
+            <div id="result-message">Great you do remember stuff</div>
+        </div>
+        <button id="restart-btn">Restart Quiz</button>
+    </div>
+   </div>
+   <script src="script.js"></script>
+</body>
+</html>
